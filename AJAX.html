@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0;
+      }
+
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #ddd;
+      }
+
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      button {
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+      .modify {
+        background: #0d6efd;
+      }
+
+      .delete {
+        background: #dc3545;
+      }
+
+      .submit {
+        background: #198754;
+      }
+
+      form {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      label {
+        display: block;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1">
+        <h3>Musical Instrumentation</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Modify</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="item-2">
+        <form action="#">
+          <label for="name">Product</label>
+          <input
+            type="text"
+            id="product"
+            name="product"
+            placeholder="Enter Product"
+            required
+          />
+
+          <label for="price">Price</label>
+          <input
+            type="text"
+            id="price"
+            name="price"
+            placeholder="Enter Price"
+            required
+          />
+
+          <button class="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./AJAX.js"></script>
+  </body>
+</html>
